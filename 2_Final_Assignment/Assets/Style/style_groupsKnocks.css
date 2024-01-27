@@ -1,0 +1,45 @@
+.draw {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.draw img {
+    width: 50%;
+    border-radius: 50px;
+}
+
+.t3ImgArea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3px;
+}
+
+.t3ImgArea img {
+    width: calc(20% - 15px); /* Adjusted width to be more responsive */
+    margin: 5px;
+    object-fit: cover;
+    border-radius: 24px;
+    padding: 1px;
+}
+/* Style images from 9th to 14th with object-fit: contain */
+.t3ImgArea img:nth-child(n + 9):nth-child(-n + 15) {
+    width: calc(33.3% - 15px); /* Adjusted width for the selected images */
+    object-fit: cover;
+}
+
+.draw, .third_tierIMG{
+    /* Specify the gradient as the border image */
+    border-image: linear-gradient(to left, #56042C, #FF4081) 1;
+    
+    /* Set the border style to 'solid' to use the border image */
+    border-style: solid;
+    
+    /* Set the border width */
+    border-width: 0px 0px 4px 0px;
+    
+    }
+

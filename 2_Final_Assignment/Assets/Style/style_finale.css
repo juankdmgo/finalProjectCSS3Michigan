@@ -1,0 +1,32 @@
+:root{
+    --palette-gold: #b8860b;
+}
+
+body {
+    background: linear-gradient(to bottom, #79a3d6, #ffffff);
+}
+
+header {
+    background: linear-gradient(to right, #ffd700, #b8860b);
+    /* Adjust the angle and colors as needed */
+}
+.img_area :nth-child(1) {
+    width: 45%;    
+}
+.img_area :nth-child(2) {
+    width: 30%; 
+    height: 80%;   
+}
+
+.first_tier, .second_tier, .third_tier, .third_tierIMG, .draw {
+    /* Specify the gradient as the border image */
+    border-image: linear-gradient(to right, #ffd700, #b8860b) 1;
+    
+    /* Set the border style to 'solid' to use the border image */
+    border-style: solid;
+    
+    /* Set the border width */
+    border-width: 0px 0px 4px 0px;
+    
+    }
+    

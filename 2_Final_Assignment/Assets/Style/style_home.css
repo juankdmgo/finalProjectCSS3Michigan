@@ -1,0 +1,286 @@
+/*Create color palette*/
+:root {
+    --palette-red: #56042C;
+    --palette-yellow: #FEC310;
+    --palette-lightblue: #49BCE3;
+    --palette-darkblue: #1077C3;
+}
+/*Create fonts*/
+@font-face {
+    font-family: QatarBold;
+    src: url(../Fonts/Qatar2022-Bold.otf);
+}
+@font-face {
+    font-family: QatarMedium;
+    src: url(../Fonts/Qatar2022-Medium.otf);
+}
+@font-face {
+    font-family: QatarHeavy;
+    src: url(../Fonts/Qatar2022-Heavy.otf);
+}
+/*Style the body to occupy full width and height*/
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f5f5f5, #e0e0e0); /* Gradient from light gray to slightly darker gray */
+    color: #333;
+}
+/*Style skip to main content link*/
+/* Initial style for the skip link */
+.skip-link {
+    position: absolute;
+    left: -9999px; /* Move the link off-screen */
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* Style the skip link when it is in focus */
+.skip-link:focus {
+    left: auto;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    background-color: #007bff; /* Add a background color or any other styling you prefer */
+    color: #fff; /* Set the text color */
+    padding: 10px;
+    text-align: center;
+    z-index: 999; /* Ensure the skip link appears on top of other elements */
+}
+
+
+/*Style the header background*/
+header {
+    display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--palette-lightblue); /* Set your desired background color */
+      color: var(--palette-red); /* Set your desired text color */
+}
+/*Style logo*/
+header img {
+    width: 100px;
+}
+header h1 {
+    font-family: QatarHeavy;
+    text-align: center;
+}
+
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    font-family: QatarMedium;
+    list-style-type: none;
+    text-align: center;
+    margin-right: 15px;
+}
+
+nav a {
+    color: var(--palette-red);
+}
+nav a {
+    color: var(--palette-red); /* Set the color for unvisited links */
+    text-decoration: none;
+}
+
+/* Visited link style */
+nav a:visited {
+    color: var(--palette-red); /* Set the same color for visited links to maintain consistency */
+}
+
+/* Hover and focus styles */
+nav a:hover,
+nav a:focus {
+    background-color: var(--palette-yellow);
+    text-decoration: underline; /* Add an underline effect on hover or focus */
+}
+
+/* Active link style (when clicked) */
+nav a:active {
+    color: var(--palette-yellow); /* Set a different color for the active state if desired */
+}
+
+
+
+.first_tier {
+    display: inline-flex;
+    margin-top: 10px;
+   
+}
+
+.first_tier .img_area {
+    width: 50%;
+    display: flex;
+    place-items: center;
+    
+}
+.img_area img{
+    width: 40%;
+    object-fit: cover; /*Mantain aspect ratio*/
+    padding: 10px;
+    border-radius: 40px;
+}
+#intro_img2 {
+    width: 55%;
+}
+
+
+.first_tier article {
+    width: 50%;
+    padding: 10px;
+    margin-left: 5px;
+    text-align: justify;
+}
+.title_intro {
+    font-family: QatarBold;
+    font-size:large;
+    text-align: center;
+    color: var(--palette-red);
+}
+.second_tier {
+    margin-top: 10px;
+    
+}
+
+.reactions {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+.area_intro {
+    text-align: center;
+}
+.phrase_title {
+    font-family: QatarBold;
+    font-size: medium;
+    text-align: center;
+}
+.journalist_phrase {
+    margin-right: 20px;
+}
+.reactions section:nth-child(1) {
+    /* Your styles for the first section */
+    margin-left: 20px;
+}
+.phrase_author {
+    font-family: QatarMedium;
+    font-size: 10px;
+    text-align: right;
+    margin-right: 10px;
+}
+.journalist_phrase p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    text-align: justify;
+}
+.third_tier {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-top: 10px;
+    gap: 20px;
+    place-items: center;
+}
+.third_tier article {
+    margin-left: 20px;
+    grid-column: 1;
+}
+.third_tier p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+}
+.third_tier img {
+    grid-column: 2;
+    width: 75%;
+    border-radius: 40px;
+    padding-bottom: 5px;
+}
+footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* Adjusted alignment */}
+.aknow {
+    display: inline-block;
+    margin-left: 15px;
+}
+.social_acc {
+    display: flex;
+    flex-direction: column; /* Set the flex direction to column */
+    align-items: center; /* Center items horizontally */
+    justify-content: flex-end; /* Align items to the bottom */
+    margin-left: auto;
+}
+.social_acc ul {
+    display: flex;
+    list-style: none; /* Removed list-style-type property */
+    padding: 0; /* Removed default padding */
+    margin-bottom: 3px;
+}
+.social_acc ul li {
+    margin: 0 5px; /* Add spacing between icons */
+}
+
+
+.copyr {
+    font-family: QatarMedium;
+    font-size: 8px;
+}
+
+.follow {
+    font-family: QatarMedium;
+    font-size: 14px;
+    margin-bottom: 1px;
+}
+
+.first_tier, .second_tier, .third_tier {
+/* Specify the gradient as the border image */
+border-image: linear-gradient(to left, #56042C, #FF4081) 1;
+
+/* Set the border style to 'solid' to use the border image */
+border-style: solid;
+
+/* Set the border width */
+border-width: 0px 0px 4px 0px;
+
+}
+
+
+/*Styling social media acc*/
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 2px 0px 0px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
